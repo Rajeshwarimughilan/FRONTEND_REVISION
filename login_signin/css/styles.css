@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container{
+    border: 1px solid grey;
+    box-shadow: 3px 5px 10px rgb(219, 193, 193);
+    
+}
+
+.togglecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.form{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form.active{
+    display: flex;
+}
+
+.togglecontainer .active{
+    background: rgb(76, 168, 76);
+}
+
+.togglecontainer button{
+    padding:10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.togglecontainer button:hover{
+    transform: translateY(2px);
+}
+
+input{
+    padding:5px 20px;
+}

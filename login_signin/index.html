@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>AuthenticationPage</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>AUTHENTICATION PAGE</h1>
+        </header>
+
+        <div id="container" class="container">
+            <div id="togglecontainer" class="togglecontainer">
+                <button class="active" id="ltogglebtn">LOGIN</button>
+                <button id="stogglebtn">SIGNIN</button>
+            </div>
+
+            <form id="loginpage" class="form active">
+                <h2>LOGIN PAGE</h2>
+
+                <input type="email" id="lemail" placeholder="Your Email" required>
+                <input type="password" id="lpassword" placeholder="Your Password" required>
+                <button type="submit">SUBMIT</button>
+
+                <p id="lformstatus"></p>
+            </form>
+
+            <form id="signinpage" class="form">
+                <h2>SIGNIN PAGE</h2>
+
+                <input type="text" id="sname" placeholder="Your Name" required>
+                <input type="email" id="semail" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Your Password" required>
+                <button type="submit">SUBMIT</button>
+
+                <p id="sformstatus"></p>
+            </form>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

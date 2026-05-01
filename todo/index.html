@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>ToDoList</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>TODO LIST</h1>
+            <div id="filterbtns" class="filterbtns">
+                <button data-filter="all" class="fbtn active">ALL</button>
+                <button data-filter="completed" class="fbtn">DONE</button>
+                <button data-filter="incomplete" class="fbtn">YET TODO</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <input type="text" id="todoinput" placeholder="Task to be added" required>
+            <button class="addbtn" id="addbtn">ADD</button>
+        </div>
+
+        <ul id="todolist" class="todolist"></ul>
+
+        <p id="emptystate">No Tasks Available.</p>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
