@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="filters" id="filters">
+                <button class="filter" data-category="all">ALL</button>
+                <button class="filter" data-category="nature">Nature</button>
+                <button class="filter" data-category="tech">TECH</button>
+                <button class="filter" data-category="people">PEOPLE</button>
+            </div>
+
+            <p id="status">Loading Images...</p>
+
+            <div class="gallery" id="gallery"></div>
+
+            <p id="emptystate" class="hidden">No images found</p>
+
+            <script src="js/script.js"></script>
+        </div>
+    </body>
+</html>
