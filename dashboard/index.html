@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Dashboard</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+    <body>
+        <aside class="sidebar" id="sidebar">
+            <h2>DASHBOARD</h2>
+            <ul>
+                <li>Overview</li>
+                <li>Users</li>
+                <li>REports</li>
+            </ul>
+        </aside>
+
+        <div class="main">
+            <div class="topbar">
+                <button id="togglesidebar">☰</button>
+                <h1>ADMIN DASHBOARD</h1>
+            </div>
+
+            <section>
+                <h2>Sales</h2>
+                <canvas id="chart"></canvas>
+            </section>
+
+            <input type="text" id="searchinput" placeholder="Search users...">
+            
+            <p id="loading">loading...</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th id="sortname">Name ⬍</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablebody"></tbody>
+            </table>
+
+            <div class="pagination">
+                <button id="prevbtn">Prev</button>
+                <span id="pageinfo"></span>
+                <button id="nextbtn">Next</button>
+            </div>
+
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
